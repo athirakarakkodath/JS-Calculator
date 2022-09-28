@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="cal">
+            <div class="output">
+                <input type="text" id="result">
+            </div>
+            <div>
+                <button class="btn" onclick="removeLastItem()" >clr</button>
+            </div>
+            <div class="row">
+                <button class="btn" id="seven" onclick="displayNumber(7)">7</button>
+                <button class="btn" id="eight" onclick="displayNumber(8)">8</button>
+                <button class="btn" id="nine" onclick="displayNumber(9)">9</button>
+                <button class="btn" onclick="displayOperator('/')">/</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="four" onclick="displayNumber(4)">4</button>
+                <button class="btn" id="five" onclick="displayNumber(5)">5</button>
+                <button class="btn" id="six" onclick="displayNumber(6)">6</button>
+                <button class="btn" onclick="displayOperator('*')">X</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="one" onclick="displayNumber(1)">1</button>
+                <button class="btn" id="two" onclick="displayNumber(2)">2</button>
+                <button class="btn" id="three" onclick="displayNumber(3)">3</button>
+                <button class="btn" onclick="displayOperator('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="btn" id="clr" onclick="displayClear()">AC</button>
+                <button class="btn" onclick="displayNumber(0)">0</button>
+                <button class="btn" id="equ"onclick="equalClick()" >=</button>
+                <button class="btn" onclick="displayOperator('+')">+</button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="./cal.js"></script>
+
+</html>
